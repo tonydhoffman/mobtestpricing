@@ -1,0 +1,265 @@
+{
+  "settings": {
+    "currentPage": "index.html",
+    "theme": {
+      "name": "medicalm4",
+      "title": "MedicalM4",
+      "styling": {
+        "primaryColor": "#4f87fb",
+        "secondaryColor": "#130947",
+        "successColor": "#ffffff",
+        "infoColor": "#6d7a8c",
+        "warningColor": "#e6ecf2",
+        "dangerColor": "#ececec",
+        "mainFont": "Muli",
+        "display1Font": "Muli",
+        "display1Size": 3.4375,
+        "display2Font": "Muli",
+        "display2Size": 2.5,
+        "display5Font": "Muli",
+        "display5Size": 1.875,
+        "display7Font": "Muli",
+        "display7Size": 1.125,
+        "display4Font": "Muli",
+        "display4Size": 0.875,
+        "isRoundedButtons": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "titlePreset": "Private Clinic",
+      "nameSelectPreset": "privateclinic",
+      "additionalSetColors": [
+        "#780000"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "name": "Site-04-01_1353",
+    "versionFirst": "4.12.2",
+    "siteFonts": [
+      {
+        "css": "'Muli', sans-serif",
+        "name": "Muli",
+        "url": "https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "imageResize": true,
+    "favicon": false,
+    "cssOptimize": false,
+    "lazyLoad": false,
+    "lazyType": "nothing",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "pwa-switcher": false,
+    "uniqCompNum": 7,
+    "versionPublish": "4.12.2"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value",
+              "& when (@isGradientBg)": {
+                "background": "linear-gradient(45deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".head_info": {
+              "text-align": "center",
+              "margin-bottom": "70px",
+              ".mbr-subtitle": {
+                "color": "@primaryColor",
+                "margin-bottom": "10px"
+              },
+              ".mbr-subtitle.display-4": {
+                "font-size": "13px",
+                "line-height": "24px",
+                "letter-spacing": "2px"
+              },
+              ".mbr-section-title": {
+                "margin-bottom": "20px",
+                "color": "@secondaryColor",
+                "font-weight": "700"
+              },
+              ".mbr-section-title.display-2": {
+                "line-height": "48px",
+                "letter-spacing": "-0.5px"
+              },
+              ".mbr-section-text": {
+                "line-height": "1.5",
+                "margin-top": "20px",
+                "margin-bottom": "0",
+                "color": "@infoColor"
+              },
+              ".mbr-section-text.display-7": {
+                "line-height": "28px",
+                "letter-spacing": "0"
+              }
+            },
+            ".plan": {
+              "position": "relative",
+              "max-width": "330px",
+              "padding-right": "0",
+              "padding-left": "0",
+              "color": "#767676",
+              "background-color": "@CardBg",
+              "border-bottom": "solid 2px rgba(0, 0, 0, 0.07)",
+              "text-align": "center",
+              "border-radius": "8px",
+              ".plan-title": {
+                "background-color": "@defaultTitleColor",
+                "padding-bottom": "60px",
+                "padding-top": "30px",
+                "margin-bottom": "0",
+                "font-weight": "700",
+                "border-radius": "8px 8px 0 0"
+              },
+              ".plan-title.display-7": {
+                "font-size": "20px",
+                "line-height": "26px",
+                "letter-spacing": "-0.5px"
+              },
+              ".icon_box": {
+                "display": "block",
+                "text-align": "center",
+                ".ico1": {
+                  "width": "96px",
+                  "height": "96px",
+                  "line-height": "96px",
+                  "font-size": "40px",
+                  "display": "inline-block",
+                  "border-radius": "50%",
+                  "position": "relative",
+                  "top": "-40px",
+                  "background": "#fff",
+                  "color": "@secondaryColor",
+                  "box-shadow": "0 30px 50px rgba(0, 0, 0, 0.05)"
+                }
+              },
+              ".plan-price": {
+                "color": "#28303f",
+                ".price-figure": {
+                  "font-weight": "700",
+                  "display": "inline-block"
+                },
+                ".price-figure.display-1": {
+                  "font-size": "50px",
+                  "line-height": "50px"
+                },
+                ".price-value": {
+                  "font-weight": "600",
+                  "line-height": "1.5"
+                },
+                ".price-term": {
+                  "line-height": "1",
+                  "margin-top": "0.45rem"
+                }
+              },
+              ".plan-list": {
+                "padding": "30px 40px",
+                ".list-group": {
+                  "&-item": {
+                    "position": "relative",
+                    "-webkit-box-pack": "center",
+                    "justify-content": "center",
+                    "border": "0",
+                    "background": "transparent",
+                    "padding": "7.5px 0",
+                    "&:last-child": {
+                      "border-radius": "8px"
+                    }
+                  },
+                  "color": "@infoColor"
+                },
+                ".list-group.display-7": {
+                  "font-size": "16px",
+                  "line-height": "1.5"
+                }
+              },
+              ".mbr-section-btn": {
+                "padding": "0 2.45rem",
+                ".btn": {
+                  "font-weight": "700",
+                  "padding": "12px 40px",
+                  "border-radius": "2em"
+                },
+                ".btn.display-4": {
+                  "font-size": "12px",
+                  "line-height": "24px",
+                  "letter-spacing": "1px"
+                },
+                ".btn-primary": {
+                  "&:hover": {
+                    "background-color": "#28303f !important",
+                    "color": "@successColor !important"
+                  }
+                }
+              },
+              "& when (@showFavorite)": {
+                "& when (@favoriteItem = \"1\")": {
+                  "&:nth-child(1)": {
+                    ".plan-title": {
+                      "background-color": "@favoriteTitleColor"
+                    }
+                  }
+                },
+                "& when (@favoriteItem = \"2\")": {
+                  "&:nth-child(2)": {
+                    ".plan-title": {
+                      "background-color": "@favoriteTitleColor"
+                    }
+                  }
+                },
+                "& when (@favoriteItem = \"3\")": {
+                  "&:nth-child(3)": {
+                    ".plan-title": {
+                      "background-color": "@favoriteTitleColor"
+                    }
+                  }
+                },
+                "& when (@favoriteItem = \"4\")": {
+                  "&:nth-child(4)": {
+                    ".plan-title": {
+                      "background-color": "@favoriteTitleColor"
+                    }
+                  }
+                }
+              }
+            },
+            "@media (max-width: 550px)": {
+              ".price-figure": {
+                "font-size": "4.25rem"
+              }
+            }
+          },
+          "_name": "pricing-tables1",
+          "_customHTML": "<section class=\"pricingTable1\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input inline type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"7\">\n        <input inline type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Main Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <select title=\"Items Count\" name=\"itemsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n        <input type=\"color\" title=\"Card Color\" name=\"CardBg\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Main Title Color\" name=\"defaultTitleColor\" value=\"#780000\">\n\n        <input type=\"checkbox\" title=\"Favorite\" name=\"showFavorite\" checked>\n\n        <input type=\"color\" title=\"Favorite Color\" name=\"favoriteTitleColor\" value=\"#344cf1\" condition=\"showFavorite\">\n        <select title=\"Favorite Item\" name=\"favoriteItem\" condition=\"showFavorite\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#e9e9e9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Gradient Bg\" name=\"isGradientBg\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#6441a5\" condition=\"bg.type=='color' && isGradientBg\" selected>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#00f4ff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay&&bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"head_info\">\n            <h3 class=\"mbr-subtitle mbr-fonts-style mbr-bold\" data-app-selector=\".head_info .mbr-subtitle\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-4\">Alacourt</h3>\n            <h1 class=\"mbr-section-title mbr-fonts-style mbr-bold\" data-app-selector=\".head_info .mbr-section-title\" mbr-if=\"showMainTitle\" mbr-theme-style=\"display-2\">Legal System Users</h1>\n            <h2 class=\"mbr-section-text mbr-fonts-style mbr-light\" data-app-selector=\".head_info .mbr-section-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n                Condimentum vitae sapien pellentesque habitant morbi tristique senectus.\n                Nibh cras pulvinar mattis nunc.</h2>\n        </div>\n\n        <div class=\"media-container-row\">\n\n            <div class=\"plan col-12 mx-3 my-2 justify-content-center\" mbr-if=\"itemsCount > 0\" mbr-class=\"{\n                'col-lg-4': itemsCount == 3,\n                'col-lg-6': itemsCount == 2,\n                'col-lg-3': itemsCount == 4}\">\n\n                <h3 class=\"plan-title mbr-white mbr-fonts-style px-3\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-title\">\n                    Standart\n                </h3>\n                <div class=\"icon_box\">\n                    <span mbr-icon class=\"mbr-iconfont ico1 icon54-v1-nurse\"></span>\n                </div>\n                <div class=\"plan-price px-3\">\n                    <span mbr-text class=\"price-figure mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".plan-price .price-figure\">\n                        50\n                    </span>\n                    <span mbr-text class=\"price-value mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-price .price-value\">\n                        $\n                    </span>\n                    <span mbr-text class=\"price-term mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-price .price-term\">\n                        / monthly\n                    </span>\n                </div>\n                <div class=\"plan-list pb-4 align-center\">\n                    <ul mbr-text class=\"list-group list-group-flush mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan .plan-list .list-group, .mbr-section-btn\">\n                        <li class=\"list-group-item\">\n                            Robotic Surgey\n                        </li>\n                        <li class=\"list-group-item\">\n                            CyberKnife\n                        </li>\n                        <li class=\"list-group-item\">\n                            Radixact\n                        </li>\n                    </ul>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center pb-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" data-app-selector=\".plan .mbr-section-btn .btn\">\n                    <a href=\"https://mobirise.com\" class=\"btn btn-primary btn-lg\" data-app-selector=\".plan .mbr-section-btn .btn\">CHOOSE PLAN</a>\n                </div>\n            </div>\n\n            <div class=\"plan col-12 mx-3 my-2 justify-content-center\" mbr-if=\"itemsCount > 1\" mbr-class=\"{\n                'col-lg-4': itemsCount == 3,\n                'col-lg-6': itemsCount == 2,\n                'col-lg-3': itemsCount == 4}\">\n                <h3 class=\"plan-title mbr-white mbr-fonts-style px-3\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-title\">\n                    Business\n                </h3>\n                <div class=\"icon_box\">\n                    <span mbr-icon class=\"mbr-iconfont ico1 imind-medicine\"></span>\n                </div>\n                <div class=\"plan-price px-3\">\n                    <span mbr-text class=\"price-figure mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".plan-price .price-figure\">\n                        7\n                    </span>\n                    <span mbr-text class=\"price-value mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-price .price-value\">\n                        $\n                    </span>\n                    <span mbr-text class=\"price-term mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-price .price-term\">\n                        / daily\n                    </span>\n                </div>\n                <div class=\"plan-list pb-4 align-center\">\n                    <ul mbr-text class=\"list-group list-group-flush mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan .plan-list .list-group, .mbr-section-btn\">\n                        <li class=\"list-group-item\">\n                            Fetal echo\n                        </li>\n                        <li class=\"list-group-item\">\n                            Pacemaker and ICD\n                        </li>\n                        <li class=\"list-group-item\">\n                            Balloon valvuloplasty\n                        </li>\n                    </ul>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center pb-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                    <a href=\"https://mobirise.com\" class=\"btn btn-primary\">CHOOSE PLAN</a>\n                </div>\n            </div>\n\n            <div class=\"plan col-12 mx-3 my-2 justify-content-center\" mbr-if=\"itemsCount > 2\" mbr-class=\"{\n                'col-lg-4': itemsCount == 3,\n                'col-lg-6': itemsCount == 2,\n                'col-lg-3': itemsCount == 4}\">\n                <h3 class=\"plan-title mbr-white mbr-fonts-style px-3\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-title\">\n                    Premium\n                </h3>\n                <div class=\"icon_box\">\n                    <span mbr-icon class=\"mbr-iconfont ico1 imind-medicine-3\"></span>\n                </div>\n                <div class=\"plan-price px-3\">\n                    <span mbr-text class=\"price-figure mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".plan-price .price-figure\">\n                        900\n                    </span>\n                    <span mbr-text class=\"price-value mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-price .price-value\">\n                        $\n                    </span>\n                    <span mbr-text class=\"price-term mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-price .price-term\">\n                        / yearly\n                    </span>\n                </div>\n                <div class=\"plan-list pb-4 align-center\">\n                    <ul mbr-text class=\"list-group list-group-flush mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan .plan-list .list-group, .mbr-section-btn\">\n                        <li class=\"list-group-item\">\n                            Balloon expulsion test\n                        </li>\n                        <li class=\"list-group-item\">\n                            Botox\n                        </li>\n                        <li class=\"list-group-item\">\n                            Dermapen\n                        </li>\n                    </ul>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center pb-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                    <a href=\"https://mobirise.com\" class=\"btn btn-primary\" data-app-selector=\".plan .mbr-section-btn .btn\">CHOOSE PLAN</a>\n                </div>\n            </div>\n\n            <div class=\"plan col-12 mx-3 my-2 justify-content-center\" mbr-if=\"itemsCount > 3\" mbr-class=\"{\n                'col-lg-4': itemsCount == 3,\n                'col-lg-6': itemsCount == 2,\n                'col-lg-3': itemsCount == 4}\">\n                <h3 class=\"plan-title mbr-white mbr-fonts-style px-3\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-title\">\n                    Ultimate\n                </h3>\n                <div class=\"icon_box\">\n                    <span mbr-icon class=\"mbr-iconfont ico1 imind-medicine-2\"></span>\n                </div>\n                <div class=\"plan-price px-3\">\n                    <span mbr-text class=\"price-figure mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".plan-price .price-figure\">\n                        3\n                    </span>\n                    <span mbr-text class=\"price-value mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-price .price-value\">\n                        $\n                    </span>\n                    <span mbr-text class=\"price-term mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan-price .price-term\">\n                        / per hour\n                    </span>\n                </div>\n                <div class=\"plan-list pb-4 align-center\">\n                    <ul mbr-text class=\"list-group list-group-flush mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".plan .plan-list .list-group, .mbr-section-btn\">\n                        <li class=\"list-group-item\">\n                            Skin rejuvenation\n                        </li>\n                        <li class=\"list-group-item\">\n                            Hydrafacial MD\n                        </li>\n                        <li class=\"list-group-item\">\n                            Vorteq and DVA\n                        </li>\n                    </ul>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center pb-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                    <a href=\"https://mobirise.com\" class=\"btn btn-primary\" data-app-selector=\".plan .mbr-section-btn .btn\">CHOOSE PLAN</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rUW2vjAmOd",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "pricing-tables1-6"
+        }
+      ]
+    }
+  }
+}
